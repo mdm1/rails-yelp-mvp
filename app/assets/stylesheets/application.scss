@@ -1,1 +1,33 @@
 @import "bootstrap/scss/bootstrap";
+
+.container {
+  width: 500px;
+  padding-left: 30px;
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    font-size: 20px
+  }
+
+  a {
+    color: #1B4C74;
+  }
+  a:hover {
+    color: #0E273C;
+    text-decoration: none;
+  }
+}
+
+.info-container {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+  a {
+    color: #A167A5;
+  }
+  a:hover {
+    color: #4A306D;
+    text-decoration: none;
+  }
+}

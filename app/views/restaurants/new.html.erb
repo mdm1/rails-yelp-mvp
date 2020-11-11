@@ -1,0 +1,18 @@
+<div class="container">
+
+  <div class="info-container">
+    <h1>Add a restaurant</h1>
+
+    <%= simple_form_for @restaurant do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :phone_number %>
+      <%= f.input :category, :collection => %w[Chinese Italian Japanese French Belgian] %>
+      <%= f.submit "Submit entry", class: "btn btn-primary" %>
+    <% end %>
+
+  </div>
+
+  <p><%= link_to 'Back', restaurants_path %></p>
+
+</div>
